@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List</title>
+    <link rel="stylesheet" href="page/index.css">
+    <script src="scripts/TodoList.js" defer></script>
+    <script src="scripts/TodoListForm.js" defer></script>
+    <script src="scripts/TodoListItem.js" defer></script>
+    <script src="scripts/index.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <section class="todolist"></section>
+    </div>
+
+    <template id="todolist-template" stile="display: none">
+      <section class="todolist">
+        <h1>Todo List</h1>
+      </section>
+    </template>
+
+    <template id="todolist-form-template" stile="display: none">
+      <form class="todolist-form" action="">
+        <input type="text" class="todolist-form_input" />
+        <button type="submit" class="todolist-form_submit">Сохранить</button>
+      </form>
+    </template>
+
+    <template id="todolist-item-template" stile="display: none">
+      <article class="todolist-item">
+        <span class="todolist-item__text">Текст задачи</span>
+        <button class="todolist-item__toggle"></button>
+        <button class="todolist-item__del"></button>
+        <span class="todolist-item__icon">qwer</span>
+      </article>
+    </template>
+    <script type="text/javascript"></script>
+  </body>
+</html>
