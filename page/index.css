@@ -1,4 +1,5 @@
 @import url(../styles/normalize.css);
 
 @import url(../blocks/todolist-item/__icon/todolist-item__icon.css);
+@import url(../blocks/todolist-item/_inactive/todolist-item_inactive.css);
 @import url(../blocks/todolist-item/__icon/_active/todolist-item__icon_active.css);

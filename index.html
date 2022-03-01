@@ -7,6 +7,8 @@
     <title>Todo List</title>
     <link rel="stylesheet" href="page/index.css">
     <script src="scripts/TodoList.js" defer></script>
+    <script src="scripts/TodoListCounter.js" defer></script>
+    <script src="scripts/CounterUpdate.js" defer></script>
     <script src="scripts/TodoListForm.js" defer></script>
     <script src="scripts/TodoListItem.js" defer></script>
     <script src="scripts/index.js" defer></script>
@@ -25,18 +27,34 @@
     <template id="todolist-form-template" stile="display: none">
       <form class="todolist-form" action="">
         <input type="text" class="todolist-form_input" />
-        <button type="submit" class="todolist-form_submit">Сохранить</button>
+        <button type="submit" class="todolist-form_submit">Save</button>
       </form>
     </template>
 
+    <template id="todolist-counter-template" stile="display: none">
+        <section class="todolist-counter">
+          <div>
+            <button class="todolist-counter__all">All tasks</button>
+            <p class="todolist-counter__all-count"></p>
+          </div>
+          <div>
+              <button class="todolist-counter__completed">Completed tasks</button>
+              <p class="todolist-counter__completed-count"></p>
+          </div>
+          <div>
+            <button class="todolist-counter__not-completed">Tasks not completed</button>
+            <p class="todolist-counter__not-completed-count"></p>
+         </div>
+        </section>
+      </template>
+
     <template id="todolist-item-template" stile="display: none">
-      <article class="todolist-item">
+      <article class="todolist-item todolist-item_active">
         <span class="todolist-item__text">Текст задачи</span>
         <button class="todolist-item__toggle"></button>
         <button class="todolist-item__del"></button>
         <span class="todolist-item__icon">qwer</span>
       </article>
     </template>
-    <script type="text/javascript"></script>
   </body>
 </html>

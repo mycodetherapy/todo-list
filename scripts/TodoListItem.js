@@ -1,30 +1,39 @@
 class TodoListItem {
   static _template = document.querySelector("#todolist-item-template");
 
-  constructor(text) {
+  constructor(text, updateTodoListCounter, selector) {
     this._text = text;
+    this._updateTodoListCounter = updateTodoListCounter;
+    this._selector = selector;
   }
 
   _setEventListener = () => {
     this._view.querySelector('.todolist-item__del').addEventListener('click', this._delete);
-  }
-
-  _setEventListener = () => {
     this._view.querySelector('.todolist-item__toggle').addEventListener('click', this._switchTask);
   }
 
   _delete = () => {
-      this._view.remove();
+    this._updateTodoListCounter(this._view).decreaseCounter();
+    this._view.remove();
+}
+
+  _switchTask = () => {
+    const count = Number(document.querySelector('.todolist-counter__completed-count').textContent);
+    
+    this._view.querySelector('.todolist-item__icon').classList.toggle("todolist-item__icon_active");
+    this._view.classList.toggle("todolist-item_active");
+    
+    //console.log(this._view);
+    this._updateTodoListCounter(this._view).updateCompletedCounter();
   }
 
-  _switchTask() {
-    this._likeButton.classList.toggle("todolist-item__icon_active");
-  }
 
   render (container) {
+    //console.log(this._element.textContent);
     this._view = TodoListItem._template.content.cloneNode(true).children[0];
     this._view.querySelector('.todolist-item__text').textContent = this._text;
+    
     this._setEventListener();
-    container.append( this._view);
+    container.append(this._view);
   }
 }
