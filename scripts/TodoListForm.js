@@ -2,13 +2,13 @@ class TodoListForm {
   static _template = document.querySelector("#todolist-form-template");
 
   constructor(addItem, updateTodoListCounter) {
-      this._adItem = addItem;
-      this._updateTodoListCounter = updateTodoListCounter;
+    this._adItem = addItem;
+    this._updateTodoListCounter = updateTodoListCounter;
   }
 
   _submitHandler = (evt) => {
     evt.preventDefault();
-    const text = document.querySelector('.todolist-form_input').value;
+    const text = document.querySelector(".todolist-form_input").value;
     this._updateTodoListCounter(this._view).increaseCounter();
     this._updateTodoListCounter(this._view).increasenotComplitedCounter();
     this._adItem(text);

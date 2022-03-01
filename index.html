@@ -37,22 +37,20 @@
     </template>
 
     <template id="todolist-counter-template" stile="display: none">
-      <section class="todolist-counter">
-        <div>
+      <form class="todolist-counter">
+        
           <button class="todolist-counter__all">All tasks</button>
-          <p class="todolist-counter__all-count"></p>
-        </div>
-        <div>
+          <input class="todolist-counter__all-count" disabled></input>
+        
           <button class="todolist-counter__completed">Completed tasks</button>
-          <p class="todolist-counter__completed-count"></p>
-        </div>
-        <div>
+          <input class="todolist-counter__completed-count" disabled></input>
+        
           <button class="todolist-counter__not-completed">
             Tasks not completed
           </button>
-          <p class="todolist-counter__not-completed-count"></p>
-        </div>
-      </section>
+          <input class="todolist-counter__not-completed-count" disabled></input>
+        
+      </form>
     </template>
 
     <template id="todolist-item-template" stile="display: none">
