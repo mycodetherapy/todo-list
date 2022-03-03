@@ -1,14 +1,14 @@
 .todolist-counter__fildset {
-    padding: 0;
-    margin: 0;
-    border: none;
-    display: flex;
-    flex-grow: 0;
-    flex-basis: content;
+  padding: 0;
+  margin: 0;
+  border: none;
+  display: flex;
+  flex-grow: 0;
+  flex-basis: content;
 }
 
 @media (max-width: 768px) {
-    .todolist-counter__fildset {
-     padding: 7px;
-    }
+  .todolist-counter__fildset {
+    padding: 7px;
   }
+}

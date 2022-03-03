@@ -27,7 +27,7 @@ class TodoListCounter {
 
   _toggleVisibilityCompleted = () => {
    const completedArr = Array.from(
-      document.querySelectorAll(".todolist-item__icon_active")
+      document.querySelectorAll(".todolist-item__toggle_active")
     );
     completedArr.forEach((element) => {
       element.parentNode.classList.toggle("todolist-item_inactive");

@@ -14,12 +14,9 @@ class CounterUpdate {
     this._notCompletedSelector = document.querySelector(
       ".todolist-counter__not-completed-count"
     );
-    this._activeSelector = document.querySelector(
-      ".todolist-item__icon_active"
-    );
 
     this._classActive = this._element.querySelector(
-      ".todolist-item__icon_active"
+      ".todolist-item__toggle_active"
     );
   }
 

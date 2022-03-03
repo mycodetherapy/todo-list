@@ -27,8 +27,8 @@ class TodoListItem {
     );
 
     this._view
-      .querySelector(".todolist-item__icon")
-      .classList.toggle("todolist-item__icon_active");
+      .querySelector(".todolist-item__toggle")
+      .classList.toggle("todolist-item__toggle_active");
     this._view.classList.toggle("todolist-item_active");
     this._updateTodoListCounter(this._view).updateCompletedCounter();
   };

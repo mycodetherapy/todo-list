@@ -39,20 +39,20 @@
     <template id="todolist-counter-template" stile="display: none">
       <form class="todolist-counter">
         <fieldset class="todolist-counter__fildset">
-          <button class="todolist-counter__button todolist-counter__all">All tasks</button>
-          <input class="todolist-counter__input todolist-counter__all-count" disabled></input>
+          <button class="todolist-counter__button todolist-counter__all">Show all</button>
+          <input class="todolist-counter__input todolist-counter__all-count" value="0" disabled></input>
         </fieldset>
           
         <fieldset class="todolist-counter__fildset">
-          <button class="todolist-counter__button todolist-counter__completed">Completed tasks</button>
-          <input class="todolist-counter__input todolist-counter__completed-count" disabled></input>
+          <button class="todolist-counter__button todolist-counter__completed">Show completed</button>
+          <input class="todolist-counter__input todolist-counter__completed-count" value="0" disabled></input>
         </fieldset>
           
         <fieldset class="todolist-counter__fildset">
           <button class="todolist-counter__button todolist-counter__not-completed">
-            Tasks not completed
+            Show not completed
           </button>
-          <input class="todolist-counter__input todolist-counter__not-completed-count" disabled></input>
+          <input class="todolist-counter__input todolist-counter__not-completed-count" value="0" disabled></input>
         </fieldset>
           
         
@@ -61,10 +61,9 @@
 
     <template id="todolist-item-template" stile="display: none">
       <article class="todolist-item todolist-item_active">
-        <span class="todolist-item__text">Текст задачи</span>
+        <span class="todolist-item__text"></span>
         <button class="todolist-item__toggle"></button>
         <button class="todolist-item__del"></button>
-        <span class="todolist-item__icon">qwer</span>
       </article>
     </template>
   </body>

@@ -3,13 +3,21 @@
     padding: 0;
     border-radius: 4px;
     cursor: pointer;
-
     width: 160px;
     height: 100%;
+    font-size: 24px;
+    font-weight: 600;
+    opacity: 1;
 }
 
 @media (max-width: 768px) {
     .todolist-form__submit {
         width: 90px;
+        font-size: 20px;
     }
 }
+
+.todolist-form__submit:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }
