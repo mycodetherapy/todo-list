@@ -11,8 +11,8 @@ class TodoListCounter {
      //this._allItems = Array.from(document.querySelectorAll(".todolist-item"));
   }
 
-  _submitHandler = (evt) => {
-    evt.preventDefault();
+  _setEventListener = () => {
+    //evt.preventDefault();
     this._view
       .querySelector(".todolist-counter__all")
       .addEventListener("click", this._showAll);
@@ -30,7 +30,7 @@ class TodoListCounter {
       document.querySelectorAll(".todolist-item__toggle_active")
     );
     completedArr.forEach((element) => {
-      element.parentNode.classList.toggle("todolist-item_inactive");
+      element.parentElement.classList.toggle("todolist-item_inactive");
     });
   };
 
@@ -53,7 +53,8 @@ class TodoListCounter {
 
   render(container) {
     this._view = TodoListCounter._template.content.cloneNode(true).children[0];
-    this._view.addEventListener("submit", this._submitHandler);
+    //this._view.addEventListener("submit", this._submitHandler);
+    this._setEventListener();
     container.append(this._view);
   }
 }
