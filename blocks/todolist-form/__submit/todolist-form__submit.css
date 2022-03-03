@@ -1,0 +1,15 @@
+.todolist-form__submit {
+    border: none;
+    padding: 0;
+    border-radius: 4px;
+    cursor: pointer;
+
+    width: 160px;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .todolist-form__submit {
+        width: 90px;
+    }
+}

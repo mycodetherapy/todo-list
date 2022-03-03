@@ -13,14 +13,14 @@
     <script src="scripts/TodoListItem.js" defer></script>
     <script src="scripts/index.js" defer></script>
   </head>
-  <body>
+  <body class="common">
     <div class="page">
       <section class="todolist"></section>
     </div>
 
     <template id="todolist-template" stile="display: none">
       <section class="todolist">
-        <h1>Todo List</h1>
+        <h1 class="todolist__title">Todo List</h1>
       </section>
     </template>
 
@@ -28,27 +28,33 @@
       <form class="todolist-form">
         <input
           type="text"
-          class="todolist-form_input"
+          class="todolist-form__input"
           maxlength="20"
           required
         />
-        <button type="submit" class="todolist-form_submit">Save</button>
+        <button type="submit" class="todolist-form__submit">Save</button>
       </form>
     </template>
 
     <template id="todolist-counter-template" stile="display: none">
       <form class="todolist-counter">
-        
-          <button class="todolist-counter__all">All tasks</button>
-          <input class="todolist-counter__all-count" disabled></input>
-        
-          <button class="todolist-counter__completed">Completed tasks</button>
-          <input class="todolist-counter__completed-count" disabled></input>
-        
-          <button class="todolist-counter__not-completed">
+        <fieldset class="todolist-counter__fildset">
+          <button class="todolist-counter__button todolist-counter__all">All tasks</button>
+          <input class="todolist-counter__input todolist-counter__all-count" disabled></input>
+        </fieldset>
+          
+        <fieldset class="todolist-counter__fildset">
+          <button class="todolist-counter__button todolist-counter__completed">Completed tasks</button>
+          <input class="todolist-counter__input todolist-counter__completed-count" disabled></input>
+        </fieldset>
+          
+        <fieldset class="todolist-counter__fildset">
+          <button class="todolist-counter__button todolist-counter__not-completed">
             Tasks not completed
           </button>
-          <input class="todolist-counter__not-completed-count" disabled></input>
+          <input class="todolist-counter__input todolist-counter__not-completed-count" disabled></input>
+        </fieldset>
+          
         
       </form>
     </template>

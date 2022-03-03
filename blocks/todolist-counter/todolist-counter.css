@@ -1,0 +1,18 @@
+.todolist-counter {
+  border: 1px solid #999;
+  border-radius: 4px;
+  margin: auto 20px 20px;
+  padding: 7px;
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .todolist-counter {
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 20px;
+    justify-content: center;
+    max-width: max-content;
+  }
+}

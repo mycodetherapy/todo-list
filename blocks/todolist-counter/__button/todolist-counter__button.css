@@ -1,0 +1,8 @@
+.todolist-counter__button {
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    margin-right: 7px;
+    width: 160px;
+    cursor: pointer;
+}

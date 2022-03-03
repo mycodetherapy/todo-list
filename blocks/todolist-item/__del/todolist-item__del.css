@@ -1,0 +1,15 @@
+.todolist-item__del {
+    /* border: 1px solid red; */
+    border: none;
+    padding: 0;
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
+    background: url(../../../images/close-icon-s.svg) no-repeat center;
+    opacity: 1;
+}
+
+.todolist-item__del:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+  }

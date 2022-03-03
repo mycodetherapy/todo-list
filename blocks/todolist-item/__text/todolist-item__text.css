@@ -1,0 +1,18 @@
+.todolist-item__text {
+    border: 1px solid red;
+    color: #fff;
+    margin-right: 20px;
+    max-width: 100%;
+    min-width: 180px;
+    height: 100%;
+    flex-grow: 1;
+    
+    font-size: 24px;
+    font-weight: 600;
+}
+
+@media (max-width: 768px) {
+    .todolist-item__text {
+        margin-right: 10px;
+    }
+}

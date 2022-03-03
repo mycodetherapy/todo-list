@@ -1,5 +1,26 @@
 @import url(../styles/normalize.css);
+@import url(../fonts/inter/inter.css);
 
+@import url(../blocks/common/common.css);
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/todolist/todolist.css);
+@import url(../blocks/todolist/__title/todolist__title.css);
+
+@import url(../blocks/todolist-form/todolist-form.css);
+@import url(../blocks/todolist-form/__input/todolist-form__input.css);
+@import url(../blocks/todolist-form/__submit/todolist-form__submit.css);
+
+@import url(../blocks/todolist-counter/todolist-counter.css);
+@import url(../blocks/todolist-counter/__fildset/todolist-counter__fildset.css);
+@import url(../blocks/todolist-counter/__button/todolist-counter__button.css);
+@import url(../blocks/todolist-counter/__input/todolist-counter__input.css);
+
+@import url(../blocks/todolist-item/todolist-item.css);
+@import url(../blocks/todolist-item/__text/todolist-item__text.css);
+@import url(../blocks/todolist-item/__toggle/todolist-item__toggle.css);
+@import url(../blocks/todolist-item/__toggle/_active/todolist-item__toggle_active.css);
+@import url(../blocks/todolist-item/__del/todolist-item__del.css);
 @import url(../blocks/todolist-item/__icon/todolist-item__icon.css);
 @import url(../blocks/todolist-item/_inactive/todolist-item_inactive.css);
 @import url(../blocks/todolist-item/__icon/_active/todolist-item__icon_active.css);

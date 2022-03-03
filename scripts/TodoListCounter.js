@@ -8,7 +8,7 @@ class TodoListCounter {
     // this._notCompletedArr = Array.from(
     //   document.querySelectorAll(".todolist-item_active")
     // );
-     this._allItems = Array.from(document.querySelectorAll(".todolist-item"));
+     //this._allItems = Array.from(document.querySelectorAll(".todolist-item"));
   }
 
   _submitHandler = (evt) => {
