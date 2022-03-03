@@ -37,7 +37,7 @@ class CounterUpdate {
     }
   };
 
-  increasenotComplitedCounter = () => {
+  increaseNotComplitedCounter = () => {
     let notComplitedCounter = Number(this._notCompletedSelector.value);
     this._notCompletedSelector.value = notComplitedCounter + 1;
   };

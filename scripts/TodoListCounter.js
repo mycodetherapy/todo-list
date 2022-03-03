@@ -18,6 +18,7 @@ class TodoListCounter {
   };
 
   _toggleVisibilityCompleted = () => {
+   this._showAll();
    const completedArr = Array.from(
       document.querySelectorAll(".todolist-item__toggle_active")
     );
@@ -27,6 +28,7 @@ class TodoListCounter {
   };
 
   _toggleVisibilityNotCompleted = () => {
+    this._showAll();
     const notCompletedArr = Array.from(
       document.querySelectorAll(".todolist-item_active")
     );

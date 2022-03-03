@@ -10,8 +10,9 @@ class TodoListForm {
     evt.preventDefault();
     const text = document.querySelector(".todolist-form__input").value;
     this._updateTodoListCounter(this._view).increaseCounter();
-    this._updateTodoListCounter(this._view).increasenotComplitedCounter();
+    this._updateTodoListCounter(this._view).increaseNotComplitedCounter();
     this._adItem(text);
+    evt.target.reset();
   };
 
   render(container) {
