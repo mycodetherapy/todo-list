@@ -4,7 +4,6 @@ class CounterUpdate {
   constructor(element) {
     this._element = element;
 
-    //this._view = CounterUpdate._template.content.cloneNode(true).children[0];
     this._counterSelector = document.querySelector(
       ".todolist-counter__all-count"
     );
