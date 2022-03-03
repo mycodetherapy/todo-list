@@ -1,7 +1,7 @@
 .todolist-counter {
   border-radius: 4px;
   margin: auto 20px 20px;
-  padding: 7px 0;
+  padding: 7px 20PX;
   display: flex;
   justify-content: space-between;
 }

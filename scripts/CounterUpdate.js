@@ -1,5 +1,4 @@
 class CounterUpdate {
-  static _template = document.querySelector("#todolist-counter-template");
 
   constructor(element) {
     this._element = element;

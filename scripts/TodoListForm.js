@@ -4,7 +4,9 @@ class TodoListForm {
   constructor(addItem, updateTodoListCounter) {
     this._adItem = addItem;
     this._updateTodoListCounter = updateTodoListCounter;
+
   }
+
 
   _submitHandler = (evt) => {
     evt.preventDefault();
